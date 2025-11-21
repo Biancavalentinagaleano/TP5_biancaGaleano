@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen de Informática</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+</head>
+<body>
+
+    <form id="examForm" class="exam-container">
+
+        <h2>EXAMEN DE INFORMÁTICA</h2>
+
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>1. ¿Cuál es el lenguaje de programación más usado?</p>
+
+            <label><input type="radio" name="p1" value="Python"> A   Python</label>
+            <label><input type="radio" name="p1" value="Java"> B   Java</label>
+            <label><input type="radio" name="p1" value="C++"> C   C++</label>
+            <label><input type="radio" name="p1" value="Ruby"> D   Ruby</label>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>2. ¿El hardware es la parte física de un computador?</p>
+            <label><input type="radio" name="p2" value="Verdadero"> Verdadero</label>
+            <label><input type="radio" name="p2" value="Falso"> Falso</label>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p>3. ¿Qué es HTML?</p>
+            <input type="text" id="message" placeholder="Respuesta corta">
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p>4. ¿Qué significa CPU?</p>
+
+            <label><input type="radio" name="p4" value="Central Process Unit"> Central Process Unit</label>
+            <label><input type="radio" name="p4" value="Control Program Unit"> Control Program Unit</label>
+            <label><input type="radio" name="p4" value="Computer Processing Unit"> Computer Processing Unit</label>
+            <label><input type="radio" name="p4" value="Central Processing Unit"> Central Processing Unit</label>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p>5. ¿El sistema operativo es un software?</p>
+            <label><input type="radio" name="p5" value="Verdadero"> Verdadero</label>
+            <label><input type="radio" name="p5" value="Falso"> Falso</label>
+        </div>
+
+        <button type="submit" class="submit-btn">ENVIAR</button>
+
+        <p id="status-message"></p>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="../js/examen.js"></script>
+
+</body>
+</html>

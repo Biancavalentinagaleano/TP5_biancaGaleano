@@ -1,0 +1,111 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#4f8cff, #a3d1ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  width: 90%;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #0003;
+  animation: fadeIn 1s;
+}
+
+/* TEXT */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.descripcion {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #444;
+}
+
+.bienvenida {
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #0066aa;
+}
+
+/* BUTTONS */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px;
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #004c99;
+  transform: scale(1.05);
+}
+
+.volver {
+  margin-top: 25px;
+  background: #444;
+}
+
+.volver:hover {
+  background: #222;
+}
+
+/* FORMS */
+.formulario form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #003366;
+  font-weight: bold;
+}
+
+form input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0066cc;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 90px;
+}
+
+.status {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
